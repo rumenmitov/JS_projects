@@ -1,0 +1,258 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    overflow-x: hidden;
+}
+
+@media screen and (min-device-width: 1200px) {
+    /* nav bar */
+
+    table#navBar {
+        position: absolute;
+        border-collapse: collapse;
+        text-align: center;
+        width: 96%;
+        line-height: 200%;
+    }
+
+        tr#nav {
+            background: whitesmoke;
+            color: black;
+        }
+
+            #nav td {
+                padding: 1%;
+                height: 50px; /* don't touch the pixels! */
+            }
+
+                #nav td:hover {
+                    background: goldenrod;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                    #nav td a {
+                        text-decoration: none;
+                        color: black;
+                    }
+            
+                #dropContent {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 8.25%;
+                    text-align: left;
+                    width: 20%;
+                    overflow: auto;
+                    position: absolute;
+                    background: #ffffcc;
+                    z-index: 1;
+                }
+
+                #dropBtn:hover #dropContent {
+                    display: block;
+                }
+
+                    #dropContent a:hover {
+                        font-size: 150%;
+                    }
+
+/* language selection */
+
+    div#languages {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 150px;
+        height: 20px;
+    }
+
+        #languages img {
+            padding: 5%;
+        }
+
+            #languages img:hover {
+                border:rgba(234, 222, 136, 0.832) inset;
+            }
+
+
+/* main body */
+
+    div#backgroundImage {
+        background: url("./images/logo.png") center center no-repeat;
+        position: fixed;
+        top: 20%;
+        left: 14%;
+        width: 70%;
+        height: 60%;
+    }
+    
+    div#mainBody {
+        position: relative;
+        top: 620px; /* don't touch the pixels! */
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        z-index: 1;
+        border: rgb(189, 199, 45) ridge;
+        text-align: center;
+        background: rgba(234, 222, 136, 0.832);
+    }
+
+/* footer */
+
+    footer {
+        position: relative;
+        padding: 1%;
+        margin-top: 1%;
+        margin-bottom: 0.1%;
+        margin-left: -3%;
+        top: 620px; /* don't touch the pixels! */
+        width: 105%;
+        background: rgb(98, 96, 96);
+        color: rgb(204, 198, 198);
+
+    }
+
+        footer #contacts {
+            position: relative;
+            top: 60px; /* don't touch the pixels! */
+            width: 100%;
+            margin-left: 8%;
+        }
+        
+        footer img {
+            position: relative;
+            top: -100px; /* don't touch the pixels! */
+            left: 80%;
+            width: 10%;
+        }
+}
+
+@media screen and (max-device-width: 1199px) {
+
+/* nav bar */
+
+    table#navBar {
+        position: absolute;
+        border-collapse: collapse;
+        text-align: center;
+        width: 96%;
+        line-height: 200%;
+    }
+
+        tr#nav {
+            background: whitesmoke;
+            color: black;
+        }
+
+            #nav td {
+                padding: 1%;
+                height: 50px; /* don't touch the pixels! */
+            }
+
+                #nav td:hover {
+                    background: goldenrod;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                    #nav td a {
+                        text-decoration: none;
+                        color: black;
+                    }
+            
+                #dropContent {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 8.25%;
+                    text-align: left;
+                    width: 40%;
+                    overflow: auto;
+                    position: absolute;
+                    background: #ffffcc;
+                    z-index: 1;
+                }
+
+                #dropBtn:hover #dropContent {
+                    display: block;
+                }
+
+                    #dropContent a:hover {
+                        font-size: 150%;
+                    }
+
+/* language selection */
+
+    div#languages {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 150px;
+        height: 20px;
+    }
+
+        #languages img {
+            padding: 5%;
+        }
+
+            #languages img:hover {
+                border:rgba(234, 222, 136, 0.832) inset;
+            }
+
+
+/* main body */
+
+    div#backgroundImage {
+        background: url("./images/logo_small.png") center center no-repeat;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        width: 70%;
+        height: 60%;
+    }
+    
+    div#mainBody {
+        position: relative;
+        top: 620px; /* don't touch the pixels! */
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        z-index: 1;
+        border: rgb(189, 199, 45) ridge;
+        text-align: center;
+        background: rgba(234, 222, 136, 0.832);
+    }
+
+/* footer */
+
+    footer {
+        position: relative;
+        padding: 1%;
+        margin-top: 1%;
+        margin-bottom: 0.1%;
+        margin-left: -3%;
+        top: 620px; /* don't touch the pixels! */
+        width: 105%;
+        background: rgb(98, 96, 96);
+        color: rgb(204, 198, 198);
+
+    }
+
+        footer #contacts {
+            position: relative;
+            top: 60px; /* don't touch the pixels! */
+            width: 100%;
+            margin-left: 8%;
+        }
+        
+        footer img {
+            position: relative;
+            top: -100px; /* don't touch the pixels! */
+            left: 80%;
+            width: 10%;
+        }
+}
+
+

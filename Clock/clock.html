@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="clock.png">
+        <title>Clock</title>
+        <style>
+            body {
+                font-size: 60px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: black;
+                text-align: center center;
+            }
+
+                #clock {
+                    margin-top: 15%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    top: 40%;
+                    width: fit-content;
+                    border: solid 5px rgb(48, 48, 48);
+                    border-radius: 20%;
+                    padding: 3% 7% 3% 7%;
+                    background: grey;
+                }
+
+                    span#time {
+                        color: rgb(255, 255, 255);
+                    }
+
+                    span#date {
+                        opacity: 0.7;
+                        font-size: 40%;
+                        color: whitesmoke;
+                        padding-left: 30%;
+                    }
+        </style>
+        <script>
+            window.onload = function() {
+                clock = document.getElementById("clock");
+                setInterval( function() {
+                    let date = new Date();
+                    let hours = date.getHours();
+                    let minutes = date.getMinutes();
+                    let seconds = date.getSeconds();
+                    let day = date.getDate();
+                    let month = date.getMonth();
+                    let year = date.getFullYear();
+
+                    let time = "<span id='time'>" + hours + ":" + minutes + ":" + seconds + "</span><br><span id='date'>" +
+                    day + ":" + month + ":" + year + "</span>";
+                    clock.innerHTML = time;
+                }, 10);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="clock"></div>
+    </body>
+
+</html>

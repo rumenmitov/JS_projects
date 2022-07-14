@@ -29,3 +29,5 @@ window.onload = function() {
 
 
 }
+
+console.log("Made by Rumen Mitov ©2022");

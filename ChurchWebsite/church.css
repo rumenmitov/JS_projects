@@ -1,7 +1,73 @@
+/* font */
+
 @font-face {
     font-family: bg_font;
     src: url("customFonts/BalkaraFreeCondensed-npoekmu.me.ttf");
 }
+
+/* animations and transitions */
+div#mainBody {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#nav td:hover {
+    animation: colorSwitch 1s;
+}
+
+@keyframes colorSwitch {
+    from {
+        background: whitesmoke;
+    }
+
+    to {
+        background: goldenrod;
+    }
+}
+
+#dropContent a:hover {
+    animation: sizeChange 1s;
+}
+
+@keyframes sizeChange {
+    from {
+        font-size: 100%;
+    } 
+
+    to {
+        font-size: 150%;
+    }
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(239, 230, 179);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: goldenrod;
+}
+
+/* general stuff */
 
 body {
     font-family: bg_font;
@@ -11,6 +77,7 @@ body {
 }
 
     div#mainBody h1 {
+        margin-top: 5%;
         margin-bottom: 8%;
     } 
 
@@ -239,7 +306,7 @@ body {
         position: absolute;
         top: 15%;
         right: 5%;
-        width: 150px;
+        width: 200px;
         height: 20px;
     }
 
@@ -377,7 +444,7 @@ body {
             position: absolute;
             top: 15%;
             right: 5%;
-            width: 150px;
+            width: 200px;
             height: 20px;
         }
     

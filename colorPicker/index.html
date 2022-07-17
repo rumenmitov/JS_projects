@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color picker</title>
+	<meta charset="utf-8">
+	<script>
+	window.onload = function() {
+		document.getElementById("colorPicker").onkeypress = function(event) {
+			if (event.target) {
+				getInput();
+				return false;
+			}	
+		};
+		function getInput() {
+			color = document.getElementById("colorPicker").value;
+			document.body.style.background = color;	
+		}
+
+		submitButton = document.getElementById("submitButton");
+		submitButton.addEventListener("click", getInput);
+		keyCode
+	}
+	</script>
+</head>
+<body>
+	<div id="mainBody">
+		<h1>Pick a color!</h1>
+		<form>
+			<input type="color" id="colorPicker"></input>
+		</form>
+		<button id="submitButton">Submit</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/st_Ivan_Rilski_icona.png">
+    <title>Българска православна общност в Люксембург</title>
+    <link rel="stylesheet" href="../church.css">
+    <script src="../church.js"></script>
+
+    <style>
+        #dropContent {
+            right: 2.5%;
+        }
+
+        div#mainBody {
+            padding: 3%;
+            line-height: 300%;
+        }
+
+            div#mainBody p.contact_us {
+                font-weight: bold;
+            }
+
+                span.info {
+                    font-style: italic;
+                    font-weight: normal;
+                }
+
+            div#mainBody p.contact_us a {
+                color: black;
+            }
+
+            div#mainBody img {
+                padding-top: 3%;
+                border-top: solid black 2px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+    @media screen and (max-device-width: 1000px) {
+        div#mainBody img {
+                width: 300px;
+            }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- nav bar -->
+
+    <table id="navBar">
+        <tr id="nav">
+            <td><a href="index.html">Начало</a></td>
+            <td><a href="events.html">Събития</a></td>
+            <td><a href="donations.html">Дарения</a></td>
+            <td id="dropBtn">За нас
+                <div id="dropContent">
+                    <a href="contact_us.html">Свържете се с нас</a><br>
+                    <a href="photos.html">Снимки и видя</a><br>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- language selection -->
+
+    <div id="languages">
+        <a href="../bg/contact_us.html"><img src="../images/bg_flag.png" alt="bg_flag" width="30px" height="20px" title="Български"></a>
+        <a href="../en/contact_us.html"><img src="../images/uk_flag.png" alt="uk_flag" width="30px" height="20px" title="English"></a>
+        <a href="../fr/contact_us.html"><img src="../images/fr_flag.png" alt="fr_flag" width="30px" height="20px" title="Français"></a>
+
+    </div>
+
+    <!-- main body -->
+    
+    <div id="backgroundImage"></div>
+    
+    <div id="mainBody">
+        <h1>Свържете се с нас</h1>
+        <p class="contact_us"><span class="info">Facebook:</span> <a href="https://www.facebook.com/BPCOSv.IvanRilski/?ref=page_internal">Българска православна общност в Люксембург</a></p>
+        <p class="contact_us"><span class="info">Email:</span> bgeglise@gmail.com</p>
+        <img src="../images/contact_us_photo.jpg" width="500" height="237">
+
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div id="contacts">
+            <p>Facebook: <a href="https://www.facebook.com/BPCOSv.IvanRilski/?ref=page_internal">Българска православна общност в Люксембург</a></p>
+            <p>Email: <a>bgeglise@gmail.com</a></p>
+        </div>
+        <img src="../images/example_stamp.png" alt="stamp" width="100" height="100">
+    </footer>
+
+</body>
+</html>

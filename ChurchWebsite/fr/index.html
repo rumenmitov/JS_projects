@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../images/st_Ivan_Rilski_icona.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communaute orthodoxe bulgare au Luxembourg</title>
+    <link rel="stylesheet" href="../church.css">
+    <script src="../church.js"></script>
+    <style>
+        #dropContent {
+            right: 13.2%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- nav bar -->
+
+    <table id="navBar">
+        <tr id="nav">
+            <td><a href="index.html">Page d'accueil</a></td>
+            <td><a href="events.html">Evenements</a></td>
+            <td><a href="donations.html">Des dons</a></td>
+            <td id="dropBtn">Qui sommes-nous
+                <div id="dropContent">
+                    <a href="contact_us.html">Contactez-nous</a><br>
+                    <a href="photos.html">Photos et videos</a><br>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- language selection -->
+
+    <div id="languages">
+        <a href="../bg/index.html"><img src="../images/bg_flag.png" alt="bg_flag" width="30px" height="20px" title="Български"></a>
+        <a href="../en/index.html"><img src="../images/uk_flag.png" alt="uk_flag" width="30px" height="20px" title="English"></a>
+        <a href="../fr/index.html"><img src="../images/fr_flag.png" alt="fr_flag" width="30px" height="20px" title="Français"></a>
+
+    </div>
+
+    <!-- main body -->
+    
+    <div id="backgroundImage"></div>
+    <p id="backgroundImageTranslation">Communaute orthodoxe bulgare au Luxembourg</p>
+    
+    <div id="mainBody">
+        <h1>Bienvenu!</h1>
+        <h3>Tropaire de Saint Jean</h3>
+        <pre id="welcomeParagraph">O saint, egal aux anges,
+tu as ete un modele de repentir,
+un exemple de misericorde,
+une norme de confort et de perfection spirituelle.
+O pere Jean, tu as vecu dans la priere, le jeune et les larmes,
+plaidez donc aupres de Christ notre Dieu pour nos ames.</pre>
+    </div>
+
+    <div id="audioDIV" title="Tropaire de Saint Jean">
+        <audio id="audioPlayer">
+            <source src="../Orthodox Christian Chant - Troparion to Saint John of Rila.mp3" type="audio/mpeg">
+        </audio>
+        <img src="../images/audioPlay.png" width="50" height="50" id="audioPause">
+        <img src="../images/audioPause.png" width="50" height="50" id="audioPlay">
+        <img src="../images/closeButton.png" width="20" height="20" id="closeButton">
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div id="contacts">
+            <p>Facebook: <a href="https://www.facebook.com/BPCOSv.IvanRilski/?ref=page_internal">Communaute orthodoxe bulgare au Luxembourg</a></p>
+            <p>Email: <a>bgeglise@gmail.com</a></p>
+        </div>
+        <img src="../images/example_stamp.png" alt="stamp" width="100" height="100">
+    </footer>
+
+</body>
+</html>

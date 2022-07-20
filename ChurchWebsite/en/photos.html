@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/st_Ivan_Rilski_icona.png">
+    <title>Bulgarian Orthodox Community in Luxembourg</title>
+    <link rel="stylesheet" href="../church.css">
+    <script src="../church.js"></script>
+
+    <style>
+    
+    @media screen and (max-device-width: 1000px) {
+        div#mainBody {
+            overflow-x: scroll;
+        }
+
+        div#mainBody #tableContent #tableRow .tableCell {
+            display: table-cell;
+            padding: 30px;
+            width: 200px;
+            vertical-align: top;
+        }
+    }
+
+    @media screen and (min-device-width: 1001px) {
+        div#mainBody #tableContent #tableRow .tableCell {
+            display: table-cell;
+            border-right: solid;
+            padding-left: 5%;
+            width: 200px;
+            vertical-align: top;
+        }
+    }
+
+    div#mainBody {
+            padding: 3%;
+            line-height: 300%;
+        }
+
+        div#mainBody #tableContent {
+            display: table;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+            position: relative;
+            top: 15%;
+            left: 10%;
+        }
+
+        div#mainBody #tableContent #tableRow {
+            display: table-row;
+        }
+
+        div#mainBody #tableContent #tableRow #facebookPage {
+            border-right: none;
+        }
+
+        div#mainBody #tableContent #tableRow .tableCell > * {
+            display: block;
+            margin-top: 10%;
+        }
+
+        div#mainBody #tableContent #tableRow .tableCell > p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- nav bar -->
+
+    <table id="navBar">
+        <tr id="nav">
+            <td><a href="index.html">Home</a></td>
+            <td><a href="events.html">Events</a></td>
+            <td><a href="donations.html">Donations</a></td>
+            <td id="dropBtn">About Us
+                <div id="dropContent">
+                    <a href="contact_us.html">Contact Us</a><br>
+                    <a href="photos.html">Photos and Videos</a><br>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- language selection -->
+
+    <div id="languages">
+        <a href="../bg/photos.html"><img src="../images/bg_flag.png" alt="bg_flag" width="30px" height="20px" title="Български"></a>
+        <a href="../en/photos.html"><img src="../images/uk_flag.png" alt="uk_flag" width="30px" height="20px" title="English"></a>
+        <a href="../fr/photos.html"><img src="../images/fr_flag.png" alt="fr_flag" width="30px" height="20px" title="Français"></a>
+
+    </div>
+
+    <!-- main body -->
+    
+    <div id="backgroundImage"></div>
+    <p id="backgroundImageTranslation">Bulgarian Orthodox Community in Luxembourg</p>
+    
+    <div id="mainBody">
+        <h1>Photos and Videos</h1>
+        <div id="tableContent">
+            <div id="tableRow">
+                <div class="tableCell">
+                    <img src="../images/recentPhotos1.jpg" width="200" height="150">
+                    <img src="../images/recentPhotos2.jpg" width="200" height="150">
+                    <img src="../images/recentPhotos3.jpg" width="200" height="150">
+                </div>
+                <div class="tableCell">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FBPCOSv.IvanRilski%2Fvideos%2F389891472638172%2F&show_text=false&width=267&t=0" width="200" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                </div>
+                <div class="tableCell" id="facebookPage">
+                    <p><em>For more please visit:</em></p>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBPCOSv.IvanRilski&tabs=timeline&width=200&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1270599427045444" width="200" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div id="contacts">
+            <p>Facebook: <a href="https://www.facebook.com/BPCOSv.IvanRilski/?ref=page_internal">Bulgarian Orthodox Community in Luxembourg</a></p>
+            <p>Email: <a>bgeglise@gmail.com</a></p>
+        </div>
+        <img src="../images/example_stamp.png" alt="stamp" width="100" height="100">
+    </footer>
+
+</body>
+</html>

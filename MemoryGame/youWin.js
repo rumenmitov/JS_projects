@@ -1,4 +1,4 @@
 window.onload = function() {
     const playAgain = document.getElementById("playAgain");
-    playAgain.onclick = function() { location.href = "memoryGame.html"};
+    playAgain.onclick = function() { location.href = "index.html"};
 }
